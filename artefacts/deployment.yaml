@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rdep
+spec:
+  replicas: 2
+  selector:
+   matchLabels:
+     name: rc
+  template:
+    metadata:
+
+      labels:
+        name: rc
+    spec:
+      containers:
+        - name: c00
+          image: ubuntu
+          command: ["/bin/bash", "-c", "while true; do echo ra shnkar; sleep 5; done"]
+          ports:
+            - containerPort: 8080
