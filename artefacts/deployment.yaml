@@ -19,3 +19,8 @@ spec:
           command: ["/bin/bash", "-c", "while true; do echo ra shnkar; sleep 5; done"]
           ports:
             - containerPort: 8080
+        - name: c01
+          image: ubuntu
+          command: ["/bin/bash", "-c", "while true; do echo co1 shnkar; sleep 5; done"]
+          ports:
+            - containerPort: 8080
