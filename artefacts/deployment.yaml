@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: rdep
 spec:
-  court: invalisfd
   replicas: 2
   selector:
    matchLabels:
