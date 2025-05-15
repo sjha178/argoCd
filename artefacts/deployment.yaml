@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: rdep
 spec:
+  court: 5
   replicas: 2
   selector:
    matchLabels:
