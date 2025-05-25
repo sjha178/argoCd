@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: rdep
 spec:
-  replicas: 2
+  replicas: 3
   selector:
    matchLabels:
      name: rc
