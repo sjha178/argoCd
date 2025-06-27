@@ -5,7 +5,7 @@ resources:
   - deployment.yaml
   - service.yaml
 
-namespace: base-utils
+namespace: cbs-proxy
 
 commonLabels:
   environment: test
